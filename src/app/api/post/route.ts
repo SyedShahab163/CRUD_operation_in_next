@@ -18,23 +18,18 @@ import { experimental_taintUniqueValue } from "react";
      
    if( age > 18 &&  age < 60){
      user = "this is your eligible"
-    
    }
     else {
          user = "sorry this is not eligile"
     }
-    // const alluser = user
-    // const user  = " "
     return NextResponse.json({
         message:"ok",
         user,
-      
     },
     {
         status:200
     }
     )
-    console.log("[[[[[[[[[[[[[[[[[[")
   } catch (error) {
      return NextResponse.json({
          error:"yaar is ko sahe karro"
