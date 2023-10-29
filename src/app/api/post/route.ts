@@ -32,7 +32,7 @@ import { experimental_taintUniqueValue } from "react";
     )
   } catch (error) {
      return NextResponse.json({
-         error:"yaar is ko sahe karro"
+         error:"Somethin went Wrong"
      },
      {
          status:500
