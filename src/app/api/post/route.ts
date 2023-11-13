@@ -13,28 +13,34 @@ import {postuser} from "@/lib/Userdata"
     }
     postuser(Userdata)
       let user
-  //  if( age > 18 &&  age < 60){
-      // user = "this is your eligible"
-  //  }
-    // else {
-        //  user = "sorry this is not eligile"
-    // }
-      // 
-    const  Condition: boolean = true; 
-     let con
-       if (Condition === vip) {
-        user = Userdata
-    
-      } else {
-   
-     user = "sorry this is not a vip person"
-    }
-      if (name === 'admin') {
-      user ="Name is admin Condition satisfied"
 
-    } else 
-       user = "Name is not admin. Condition not satisfied"
-      
+    if( vip === true){
+       user =  Userdata}
+     else if(name === "admin" ){
+        user = Userdata
+    }else if(age > 18 &&  age < 60){
+    user = "this is your eligible"
+    }else{
+        user = "sorry this is not vip person"
+    }
+    // }else
+      // user = "sorry this is not eligible"
+    // }
+    // const  Condition: boolean = true; 
+    //  let con
+      //  if (vip === true) {
+        // user = Userdata
+    // 
+      // } else {
+   
+    //  user = "sorry this is not a vip person"
+    // }
+      // if (name === 'admin') {
+      // user ="Name is admin Condition satisfied"
+
+      // } else 
+      //  user = "Name is not admin. Condition not satisfied"
+      // 
 
      return NextResponse.json({
         message:"ok",
